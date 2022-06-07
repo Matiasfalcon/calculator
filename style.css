@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Dosis', sans-serif;
+}
+
+.contenedor {
+    min-height: 420px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #383838;
+}
+
+.calculadora {
+    display: grid;
+    grid-template-columns: repeat(4, 3rem);
+    grid-template-rows: 120px repeat(5, 3rem);
+    background-color: #251D3A;
+    padding: .5rem;
+    border-radius: 10px;
+    box-shadow: 3px 5px 10px 5px #000000;
+    color: #fff;
+}
+
+.pantalla {
+    grid-column: 1/-1;
+    padding: .8rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+    word-break: break-all;
+    border-radius: 15px;
+    margin-bottom: 10px;
+    border: 1px solid #d5d5d530;
+    box-shadow: 0 0 10px 5px #00000030;
+    text-shadow: 0 0 1px #15ff00;
+    color: #ffffff;
+}
+
+#valor-anterior {
+    font-size: 24px;
+}
+
+#valor-actual {
+    font-size: 32px;
+}
+
+button {
+    border: none;
+    margin: 2px;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: #2A2550;
+    box-shadow: 0 0 15px 0 #00000030;
+    border: 1px solid #00000030;
+    color: #FF7700;
+}
+
+button:active {
+    background-color: #FF7700;
+    color: #000000;
+}
+
+.col-2 {
+    grid-column: span 2;
+}
+
+footer {
+    text-align: center;
+    color: #fff;
+    background-color: #383838;
+    border-top: 1px solid #00000050;
+    padding: .7rem;
+    font-size: small;
+    text-shadow: 0 0 3px #000000;
+}
+
+header {
+    text-align: center;
+    color: #fff;
+    background-color: #383838;
+    border-bottom: 1px solid #00000050;
+    padding: .7rem;
+    font-size: 32px;
+    font-weight: bold;
+    text-shadow: 0 0 3px #000000;
+}
+
+.operator {
+    background-color: #075200;
+    color: #fff;
+}
+
+.operator:active {
+    background-color: #520000;
+    color: #fff;
+}
