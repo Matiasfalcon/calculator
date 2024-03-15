@@ -31,6 +31,13 @@ body {
     color: #fff;
 }
 
+.display {
+    height: 30px;
+    width: 180px;
+    display: flex;
+    justify-content: flex-end;
+}
+
 /* Buttons container */
 .buttons-grid {
     border: solid black;
